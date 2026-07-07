@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monica Energy | Admin Login</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- Login Style -->
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+
+</div>
+
+<div class="login-container">
+
+    <div class="login-left">
+
+        <div class="brand">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-gas-pump"></i>
+
+            </div>
+
+            <h1>Monica Energy</h1>
+
+            <p>
+                Premium Fuel Management System
+            </p>
+
+        </div>
+
+        <div class="welcome">
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+
+                Securely access your administration dashboard
+                to manage customers, transactions, rewards,
+                promotions and business analytics.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="login-right">
+
+        <form
+            id="loginForm"
+            autocomplete="off">
+
+            <h2>
+
+                Administrator Login
+
+            </h2>
+
+            <p>
+
+                Sign in using your administrator account.
+
+            </p>
+
+            <div class="input-group">
+
+                <label>
+
+                    Username
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter username">
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+
+                    Password
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password">
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="password-toggle">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="options">
+
+                <label class="remember">
+
+                    <input
+                        type="checkbox"
+                        id="remember">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">
+
+                    Forgot Password?
+
+                </a>
+
+            </div>
+
+            <button
+                class="login-btn"
+                type="submit">
+
+                <span>
+
+                    Login
+
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+            <div
+                id="loginMessage"
+                class="message">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

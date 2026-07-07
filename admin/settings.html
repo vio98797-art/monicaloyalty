@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Energy | Settings</title>
+
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/dashboard.css">
+```
+
+</head>
+<body>
+
+<div class="dashboard">
+
+```
+<!-- Sidebar -->
+<aside class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-gas-pump"></i>
+        <h2>Monica Energy</h2>
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="customers.html">
+                <i class="fa-solid fa-users"></i>
+                Customers
+            </a>
+        </li>
+
+        <li>
+            <a href="transactions.html">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Transactions
+            </a>
+        </li>
+
+        <li>
+            <a href="rewards.html">
+                <i class="fa-solid fa-gift"></i>
+                Rewards
+            </a>
+        </li>
+
+        <li>
+            <a href="promotions.html">
+                <i class="fa-solid fa-bullhorn"></i>
+                Promotions
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="logout">
+        <button id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+    </div>
+
+</aside>
+
+<!-- Main -->
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <h1>Application Settings</h1>
+            <p>Configure Monica Energy system preferences.</p>
+        </div>
+
+        <div class="top-actions">
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button>
+                <i class="fa-solid fa-bell"></i>
+            </button>
+
+            <img
+                src="../assets/images/admin.png"
+                class="avatar"
+                alt="Admin"
+                onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;background:linear-gradient(135deg,#0057FF,#00C9A7);color:#fff;font-weight:700;&quot;>A</div>');">
+
+        </div>
+
+    </header>
+
+    <!-- Company -->
+
+    <section class="panel">
+
+        <h3>Company Information</h3>
+
+        <div class="input-group">
+            <label>Company Name</label>
+            <div class="input-box">
+                <i class="fa-solid fa-building"></i>
+                <input id="companyName" type="text">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Company Tagline</label>
+            <div class="input-box">
+                <i class="fa-solid fa-quote-left"></i>
+                <input id="companyTag" type="text">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Fuel -->
+
+    <section class="panel">
+
+        <h3>Fuel Prices</h3>
+
+        <div class="input-group">
+            <label>Octane 92</label>
+            <div class="input-box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <input id="fuel92" type="number">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Octane 95</label>
+            <div class="input-box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <input id="fuel95" type="number">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Diesel</label>
+            <div class="input-box">
+                <i class="fa-solid fa-oil-can"></i>
+                <input id="diesel" type="number">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Credit -->
+
+    <section class="panel">
+
+        <h3>Credit Settings</h3>
+
+        <div class="input-group">
+            <label>Default Credit Limit</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-wallet"></i>
+                <input id="creditLimit" type="number">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Security -->
+
+    <section class="panel">
+
+        <h3>Security</h3>
+
+        <div class="input-group">
+
+            <label>Admin Username</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input id="adminUsername" type="text">
+            </div>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Admin Password</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input id="adminPassword" type="password">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Backup -->
+
+    <section class="panel">
+
+        <h3>Backup & Restore</h3>
+
+        <div style="display:flex;gap:15px;flex-wrap:wrap;">
+
+            <button
+                class="login-btn"
+                id="backupBtn"
+                style="width:auto;">
+                <i class="fa-solid fa-download"></i>
+                Backup Data
+            </button>
+
+            <button
+                class="login-btn"
+                id="restoreBtn"
+                style="width:auto;">
+                <i class="fa-solid fa-upload"></i>
+                Restore Data
+            </button>
+
+            <input
+                type="file"
+                id="restoreFile"
+                hidden
+                accept=".json">
+
+        </div>
+
+    </section>
+
+    <!-- Save -->
+
+    <section class="panel">
+
+        <button
+            id="saveSettingsBtn"
+            class="login-btn">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+            Save Settings
+
+        </button>
+
+    </section>
+
+</main>
+```
+
+</div>
+
+<script type="module" src="js/settings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Energy | Promotions</title>
+
+```
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/dashboard.css">
+```
+
+</head>
+<body>
+
+<div class="dashboard">
+
+```
+<aside class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-gas-pump"></i>
+        <h2>Monica Energy</h2>
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="customers.html">
+                <i class="fa-solid fa-users"></i>
+                Customers
+            </a>
+        </li>
+
+        <li>
+            <a href="transactions.html">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Transactions
+            </a>
+        </li>
+
+        <li>
+            <a href="rewards.html">
+                <i class="fa-solid fa-gift"></i>
+                Rewards
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="promotions.html">
+                <i class="fa-solid fa-bullhorn"></i>
+                Promotions
+            </a>
+        </li>
+
+        <li>
+            <a href="settings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="logout">
+        <button id="logoutBtn" type="button">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+    </div>
+
+</aside>
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <div>
+            <h1>Promotions</h1>
+            <p>Create and manage marketing campaigns and announcements.</p>
+        </div>
+
+        <div class="top-actions">
+
+            <button id="themeBtn" type="button">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button type="button">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+
+            <img
+                src="../assets/images/admin.png"
+                class="avatar"
+                alt="Admin"
+                onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;background:linear-gradient(135deg,#0057FF,#00C9A7);color:#fff;font-weight:700;&quot;>A</div>');">
+
+        </div>
+
+    </header>
+
+    <section class="stats">
+
+        <div class="card">
+            <h3>Total Campaigns</h3>
+            <h2 id="campaignCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Active</h3>
+            <h2 id="activeCampaigns">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Expired</h3>
+            <h2 id="expiredCampaigns">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Scheduled</h3>
+            <h2 id="scheduledCampaigns">0</h2>
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px;">
+
+            <div>
+                <h3 style="margin:0;">Promotion Campaigns</h3>
+                <p style="margin:6px 0 0;color:var(--dashboard-muted);">
+                    Manage banners, offers, fuel discounts and announcements.
+                </p>
+            </div>
+
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+
+                <div class="input-box" style="min-width:280px;background:#fff;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search promotions...">
+                </div>
+
+                <button
+                    class="login-btn"
+                    style="width:auto;padding:14px 20px;"
+                    id="addPromotionBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+                    New Promotion
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div style="overflow:auto;">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Title</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Target</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="promotionTable">
+
+                    <tr>
+
+                        <td colspan="6"
+                            style="text-align:center;padding:30px;">
+                            Loading promotions...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+```
+
+</div>
+
+<script type="module" src="js/promotions.js"></script>
+
+</body>
+</html>
